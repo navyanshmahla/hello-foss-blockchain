@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+.logo-wncc {
+  width: 100px;
+}
+
+.wncc-logo-black{
+  width: 330px;
+  margin-top: 20px;
+}
+
+.Home{
+  align-items: center;
+}
+
+.btn-wallet{
+  color: red;
+}
