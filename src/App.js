@@ -6,7 +6,7 @@ import {BrowserRouter as Router , Routes, Route} from 'react-router-dom';
 import Home from './Components/Home';
 import DApp from './Components/dApp';
 import Errorpage from './Components/errorpage';
-
+import Safe from './Components/safe';
 function App() {
   return (
     <div className="App">
@@ -16,6 +16,7 @@ function App() {
           <Route path="/" element ={<Home/>}/>
           <Route path="/dApp" element={<DApp/>}/>
           <Route path ="*" element={<Errorpage/>}/>
+          <Route path="/safe" element={<Safe/>}/>
         </Routes>
       </Router>
       
