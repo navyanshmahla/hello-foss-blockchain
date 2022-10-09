@@ -1,5 +1,6 @@
 import React from 'react';
 import {useState} from 'react';
+import { Button, Card } from "react-bootstrap";
 
 
 
@@ -17,6 +18,9 @@ export default function App() {
     <input type="time" onChange={event => setTime(event.target.value)}/>
     <br/><br/>
     Your time capsule will break at {time} on {date}!
+    <br/>
+    <br/>
+    <Button>ACTIVATE THE TIME-CAPSULE</Button>
 
 
 
