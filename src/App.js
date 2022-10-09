@@ -4,8 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Navbar';
 import {BrowserRouter as Router , Routes, Route} from 'react-router-dom';
 import Home from './Components/Home';
-import dApp from './Components/dApp';
-import errorpage from './Components/errorpage';
+import DApp from './Components/dApp';
+import Errorpage from './Components/errorpage';
 
 function App() {
   return (
@@ -14,8 +14,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element ={<Home/>}/>
-          <Route path="/dApp" element={<dApp/>}/>
-          <Route path ="*" element={<errorpage/>}/>
+          <Route path="/dApp" element={<DApp/>}/>
+          <Route path ="*" element={<Errorpage/>}/>
         </Routes>
       </Router>
       
