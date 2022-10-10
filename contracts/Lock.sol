@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.17;
 contract SolidityTest
 {
@@ -6,10 +5,9 @@ contract SolidityTest
    uint my_timestamp;  // after how many time the time capsule will open
    string my_info;   // info of time capsule here it is string which we will improve
    address makers_address; // time capsule makers address
-   mapping (address => address ) private users; // address of all the users who can access the smart contract as specified by the user
 
    modifier check_address() {
-      require (msg.sender == users[makers_address]);  // only maker can access the time capsule
+      require (msg.sender == makers_address);  // only maker can access the time capsule
          _;
    }
 
@@ -17,10 +15,6 @@ contract SolidityTest
       if(block.timestamp > my_calling_time + my_timestamp){      // contract will initialize after a certain time
          _;
       }
-   }
-
-   function add_users(address user_address) public {
-      users[makers_address] = user_address;  // users are added by the owner
    }
    
    function set_time(uint starting_time,uint timestamp) public {
