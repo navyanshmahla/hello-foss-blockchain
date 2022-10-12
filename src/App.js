@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Navbar';
 import {BrowserRouter as Router , Routes, Route} from 'react-router-dom';
 import Home from './Components/Home';
-import DApp from './Components/dApp';
+import dApp from './Components/dApp';
 import Errorpage from './Components/errorpage';
 import Safe from './Components/safe';
 function App() {
