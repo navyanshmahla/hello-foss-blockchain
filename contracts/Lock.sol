@@ -17,7 +17,7 @@ contract SolidityTest
       }
    }
    
-   function set_time(uint starting_time,uint timestamp) private {
+   function set_time(uint starting_time,uint timestamp) public {
       my_calling_time = starting_time;  //recieve time info from frontend
       my_timestamp = timestamp; 
    }
