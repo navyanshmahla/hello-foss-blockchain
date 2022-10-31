@@ -16,8 +16,8 @@ export default class
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link Link to="/">Home</Nav.Link>
-            <Nav.Link Link to="/dapp">dApp</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/dapp">dApp</Nav.Link>
             
           </Nav>
         </Navbar.Collapse>
